@@ -1,3 +1,10 @@
+
 #!/usr/bin/env ruby
-puts "SAG Integration Server"
+if File.exist?("ARGV.first/WEB-INF/geronimo-web.xml")
+  puts "Apache Geronimo"
+  exit 0
+else
+  puts "no"
+  exit 1
+end
 
