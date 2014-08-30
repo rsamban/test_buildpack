@@ -3,8 +3,8 @@
 # sync output
 $stdout.sync = true
 
-$:.unshift File.expand_path("../../lib", __FILE__)
-require "language_pack"
+# $:.unshift File.expand_path("../../lib", __FILE__)
+# require "language_pack"
 
-LanguagePack.compile(ARGV[0], ARGV[1])
+# LanguagePack.compile(ARGV[0], ARGV[1])
   
