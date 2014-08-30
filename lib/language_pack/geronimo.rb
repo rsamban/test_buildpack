@@ -3,7 +3,7 @@ require "fileutils"
 require "language_pack/package_fetcher"
 require "language_pack/format_duration"
 require 'fileutils'
-require "language_pack/java"
+#require "language_pack/java"
 
 module LanguagePack
   class Geronimo
@@ -11,7 +11,7 @@ module LanguagePack
     
     
     include LanguagePack::PackageFetcher
-    GERONIMO_CONFIG = File.join(File.dirname(__FILE__), "../../config/geronimo.yml")
+    GERONIMO_CONFIG = File.join(File.dirname(__FILE__), "../../config/is.yml")
     attr_reader :build_path, :cache_path
 
     # changes directory to the build_path
@@ -25,7 +25,7 @@ module LanguagePack
    
     def compile
       Dir.chdir(@build_path) do
-        install_geronimo
+        install_is
         copy_webapp_to_geronimo
         move_geronimo_to_root
       end

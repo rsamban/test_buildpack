@@ -1,5 +1,5 @@
-require "language_pack/java"
-require "language_pack/geronimo"
+# require "language_pack/java"
+require "language_pack/is"
 require "language_pack/package_fetcher"
 
 # General Language Pack module
@@ -10,8 +10,8 @@ module LanguagePack
   # @return [LanguagePack] the {LanguagePack} detected
   def self.compile(*args)
     Dir.chdir(args.first)
-    object1= Java.new(*args)
-    object1.compile
+    # object1= Java.new(*args)
+    # object1.compile
     object2= Geronimo.new(*args)
     object2.compile
    
