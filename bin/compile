@@ -2,6 +2,7 @@
 
 pwd = Dir.pwd
 puts "Current Working directory = #{pwd}"
+
 # sync output
 $stdout.sync = true
 
