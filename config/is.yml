@@ -1,0 +1,5 @@
+---
+repository_root: "http://192.168.0.25:8080/baseIS"
+filename: "IS96.tar"
+packages_dir : opt/softwareag/IntegrationServer/instances/default/packages
+version: 9.6 

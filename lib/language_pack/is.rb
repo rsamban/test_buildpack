@@ -24,9 +24,11 @@ module LanguagePack
     end
    
     def compile
-	puts 
+	puts "Entering rs.rb compile...."
       Dir.chdir(@build_path) do
+	puts "After Changing to build dir..."
         install_is
+	puts "After Installing IS"
       end
      
     end
