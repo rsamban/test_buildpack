@@ -24,6 +24,7 @@ module LanguagePack
     end
    
     def compile
+	puts 
       Dir.chdir(@build_path) do
         install_is
       end
@@ -46,7 +47,7 @@ module LanguagePack
     end
 
     def is_config
-      YAML.load_file(File.expand_path(GERONIMO_CONFIG))
+      YAML.load_file(File.expand_path(IS_CONFIG))
     end
    end
 end
