@@ -3,6 +3,8 @@
 # sync output
 $stdout.sync = true
 
+pwd = Dir.pwd
+puts "Current Working directory = #{pwd}"
 $:.unshift File.expand_path("../../lib", __FILE__)
  require "language_pack"
 
